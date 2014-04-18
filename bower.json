@@ -1,0 +1,12 @@
+{
+  "name": "site-base",
+  "version": "0.0.1",
+  "devDependencies": {
+    "bootstrap-sass-official": "3.1.1",
+    "modernizr": "2.7.2",
+    "jquery": "2.1.0",
+    "requirejs": "2.1.11",
+    "almond": "0.2.9"
+  },
+  "private": true
+}

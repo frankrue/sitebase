@@ -1,0 +1,11 @@
+# extraneous sass cache files anywhere
+**/.sass-cache/
+
+# user-installed node modules
+node_modules/
+
+# mac os extraneous
+**/.DS_Store
+
+# ultimate output of grunt dist
+build/
