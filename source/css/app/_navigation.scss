@@ -1,0 +1,56 @@
+.navbar-inverse {
+  @include gradient-vertical($start-color: #75858b, $end-color: $navbar-inverse-bg);
+  @include reset-filter(); // Remove gradient in IE<10 to fix bug where dropdowns don't get triggered
+
+	.navbar-brand {
+		background: url(../../i/logo.png) no-repeat 15px 50%;
+		background-size: 150px auto;
+		width: 165px;
+		height: 55px;
+		padding: 0;
+		margin-right: 60px;
+	}
+
+	.nav {
+		li {
+			a {
+				font-weight: 300;
+				-moz-transition: color 0.3s;
+				-webkit-transition: color 0.3s;
+				color: darken($navbar-inverse-link-color, 10%);
+			}
+		}
+	}
+
+	.social {
+		margin-top: 15px;
+		margin-bottom: 15px;
+		a {
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			padding: 0;
+			background: url(../../i/social.png) no-repeat top left;
+			background-size: auto 20px;
+			opacity: 0.66;
+			-moz-transition: opacity 0.3s;
+			-webkit-transition: opacity 0.3s;
+			&.twitter {
+				background-position: -20px 0;
+			}
+			&.facebook {
+				background-position: -40px 0;
+			}
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+
+}
+
+.navbar {
+	box-shadow: 0 0 15px 0 #000;
+	border-bottom: none;
+	margin-bottom: 0px;
+}

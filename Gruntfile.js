@@ -55,7 +55,8 @@ module.exports = function(grunt) {
     },
     open: {
       all: {
-        path: 'http://localhost:<%= connect.server.options.port%>'
+        path: 'http://localhost:<%= connect.server.options.port%>',
+        app: 'Google Chrome'
       }
     },
     parallel: {
