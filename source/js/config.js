@@ -42,7 +42,8 @@ require.config({
 		requirejs: 'lib/requirejs/require',
 		modernizr: 'lib/modernizr/modernizr',
 		jquery: 'lib/jquery/dist/jquery',
-		almond: 'lib/almond/almond'
+		almond: 'lib/almond/almond',
+		gsap: 'lib/gsap/src/uncompressed/TweenMax'
 	}
 });
 
