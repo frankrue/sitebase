@@ -1,6 +1,27 @@
 {
   "name": "site-base",
   "version": "0.0.1",
+  "author": "Design by The Rues LLC <inquiries@therues.com>",
+  "description": "Boilerplate for site design using LiveReload, (Node) SASS, requireJS, Bootstrap. Node- and Grunt-powered.",
+  "contributors": [
+    {
+      "name": "Frank Rue",
+      "email": "frankrue@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frankrue/sitebase.git"
+  },
+  "keywords": [
+    "sass",
+    "boilerplate",
+    "bootstrap",
+    "requireJS",
+    "template",
+    "livereload"
+  ],
+  "license": "MIT",
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-jshint": "^0.10.0",
