@@ -7,10 +7,7 @@ require(
 
     'use strict';
 
-    console.log("this is running correctly.");
-
-    // added jquery check
-    $('body').append("<p>jQuery is loaded.</p>");
+    console.log("Welcome to the boilerplate.");
 
   }
 );
