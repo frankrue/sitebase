@@ -55,7 +55,8 @@ module.exports = function(grunt) {
     },
     open: {
       all: {
-        path: 'http://localhost:<%= connect.server.options.port%>'
+        path: 'http://localhost:<%= connect.server.options.port%>',
+        app: 'Google Chrome'
       }
     },
     parallel: {
@@ -77,7 +78,7 @@ module.exports = function(grunt) {
       compile: {
         options: {
           mainConfigFile:'source/js/config.js',
-          baseUrl: 'source/js/',
+          baseUrl: 'source/js/app',
           name: 'almond',
           include: ['app'],
           insertRequire: ['app'],
@@ -101,6 +102,24 @@ module.exports = function(grunt) {
             dest: 'build/',
             flatten: true,
             filter: 'isFile'
+          }
+        ]
+      }
+    },
+    copy: {
+      dist: {
+        files: [
+          {
+            expand: true, 
+            cwd: 'source/i',
+            src: ['**'], 
+            dest: 'build/i/'
+          },
+          {
+            expand: true, 
+            cwd: 'source/inc',
+            src: ['**'], 
+            dest: 'build/inc/'
           }
         ]
       }
@@ -130,7 +149,8 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('build', [
-    'processhtml',
+    'processhtml:dist',
+    'copy:dist',
     'sass:dist',
     'requirejs'
   ]);

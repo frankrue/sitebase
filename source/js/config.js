@@ -24,8 +24,9 @@ require.config({
 			]
 		}
 	},
+	baseUrl: 'js/app',
 	paths: {
-		app: 'app/app',
+		app: 'app',
 		'bso-affix': 'lib/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix',
 		'bso-alert': 'lib/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert',
 		'bso-button': 'lib/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button',
