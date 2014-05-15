@@ -25,6 +25,14 @@ module.exports = function(grunt) {
         options: {
           spawn: false
         }
+      },
+      scripts: {
+        files: ['<%= jshint.files %>'],
+        tasks: ['jshint'],
+        options: {
+          debounceDelay: 250,
+          spawn: false
+        }
       }
     },
     sass: {
@@ -65,7 +73,12 @@ module.exports = function(grunt) {
           stream: true,
           grunt: true
         },
-        tasks: ['watch:server','watch:css']
+        tasks: [
+          'watch:server',
+          'watch:css',
+          'watch:scripts',
+          'beep:error'
+        ]
       }
     },
     bower: {
@@ -130,24 +143,28 @@ module.exports = function(grunt) {
         ]
       }
     },
+    jsonlint: {
+      scripts: {
+        src: [ 'js/app/**/*.json' ]
+      }
+    },
     jshint: {
+      files: ['Gruntfile.js', 'source/js/config.js', 'source/js/app/**/*.js'],
       options: {
-        browser: true,
         globals: {
           jQuery: true,
-          require: true,
-          console: true
+          console: true,
+          module: true,
+          document: true,
+          strict: true,
+          smarttabs: true,
+          trailing: true
         }
-      },
-      client: {
-        files: {
-          src: ['source/js/app/*.js']
-        }
-      }      
-    }
+      }
+    },
   });
 
-  grunt.registerTask('lr', [
+  grunt.registerTask('live', [
     'sass:dev',
     'parallel:web'
   ]);
