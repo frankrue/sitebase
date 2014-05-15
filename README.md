@@ -11,6 +11,7 @@ So far, this template includes:
 * [jQuery](http://jquery.com), which provides a very usable framework for common (and not-so-common) JavaScript tasks
 * [SASS](http://sass-lang.com) and [Compass](http://compass-style.org), which both provide clear and development-friendly CSS writing
 * [Bootstrap](http://getbootstrap.com), which provides a host of pre-formatted, cross-browser, mobile-friendly styles for common website elements
+* [GSAP](http://greensock.com), which not only overrides the default jQuery animate method, but also provides a more robust animation engine.
 
 
 Installation
@@ -23,10 +24,16 @@ npm install -g grunt-cli
 npm install -g bower
 ```
 
-Local Modules
--------------
+For Locally-Stored Modules (not preferred)
+------------------------------------------
 ```bash
 npm install
+```
+
+Or... For Globally-Stored Modules (preferred)
+---------------------------------------------
+```bash
+./setup_global
 ```
 
 Update Libs
