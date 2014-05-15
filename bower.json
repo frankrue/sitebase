@@ -6,7 +6,8 @@
     "modernizr": "2.7.2",
     "jquery": "2.1.0",
     "requirejs": "2.1.11",
-    "almond": "0.2.9"
+    "almond": "0.2.9",
+    "gsap": "~1.11.8"
   },
   "private": true
 }

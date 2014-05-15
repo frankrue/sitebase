@@ -1,0 +1,10 @@
+$icon-font-path: "../fonts/bootstrap/";
+
+$navbar-height: 55px;
+$navbar-inverse-color: #eff0ec;
+$navbar-inverse-bg: #4b5559;
+$navbar-inverse-link-color: #eff0ec;
+$navbar-inverse-link-hover-color: #fff;
+
+@import "../../js/lib/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap";
+@import "../../js/lib/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/theme";

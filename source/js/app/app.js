@@ -1,9 +1,10 @@
 require(
   [
     'jquery',
+    'jquery-gsap',
     'bootstrap-sass-official'
   ],
-  function($, _bootstrap) {
+  function($, _jquery_gsap, _bootstrap) {
 
     'use strict';
 

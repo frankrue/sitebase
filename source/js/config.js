@@ -22,6 +22,12 @@ require.config({
 			deps: [
 				'bso-tooltip'
 			]
+		},
+		'jquery-gsap': {
+			deps: [
+				'jquery',
+				'gsap'
+			]
 		}
 	},
 	baseUrl: 'js/app',
@@ -40,6 +46,7 @@ require.config({
 		'bso-tooltip': '../lib/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip',
 		'bso-transition': '../lib/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition',
 		'bootstrap-sass-official': '../lib/bootstrap-sass-official/vendor/assets/javascripts/bootstrap',
+		gsap: '../lib/gsap/src/uncompressed/TweenMax.js',
 		requirejs: '../lib/requirejs/require',
 		modernizr: '../lib/modernizr/modernizr',
 		jquery: '../lib/jquery/dist/jquery',

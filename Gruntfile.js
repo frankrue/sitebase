@@ -117,6 +117,12 @@ module.exports = function(grunt) {
           },
           {
             expand: true, 
+            cwd: 'source/fonts',
+            src: ['**'], 
+            dest: 'build/fonts/'
+          },
+          {
+            expand: true, 
             cwd: 'source/inc',
             src: ['**'], 
             dest: 'build/inc/'
@@ -140,6 +146,11 @@ module.exports = function(grunt) {
       }      
     }
   });
+
+  grunt.registerTask('lr', [
+    'sass:dev',
+    'parallel:web'
+  ]);
 
   grunt.registerTask('server', [
     'sass:dev',
